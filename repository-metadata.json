@@ -1,0 +1,34 @@
+{
+  "repository": "everyinfra/everyai-plugin",
+  "visibility": "public",
+  "publicationStatus": "authorized-initial-publication",
+  "plugin": "everyai",
+  "skill": "everyai",
+  "displayName": "EveryAI",
+  "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks.",
+  "homepage": "https://everyinfra.com",
+  "topics": [
+    "everyinfra",
+    "agent-plugin",
+    "text-classification",
+    "text-extraction",
+    "llm",
+    "mcp",
+    "openai-compatible",
+    "codex",
+    "claude-code",
+    "agent-skills"
+  ],
+  "searchIntent": "AI text classification and extraction with an agent skill",
+  "readmeTitle": "EveryAI — Text classification, extraction and transformation with AI",
+  "keywordResearch": "Qualitative intent mapping; no search volume, difficulty or ranking estimates.",
+  "transport": "mcp",
+  "version": "0.1.0",
+  "source": {
+    "repository": "everyinfra/everyinfra-agent-plugins",
+    "commit": "78d3fd694244529e5062c51006fc10ef0de9dc87",
+    "path": "plugins/everyinfra/skills/everyai/SKILL.md",
+    "sha256": "0090a27b75e51916a2b2528e8cffcc18730a700ac2b01438824e7e661d7e0b64"
+  },
+  "definition": "EveryAI is a standalone EveryInfra agent skill for text classification, extraction, translation and summarization. It uses the available everyinfra_chat MCP models, minimizes the supplied input and checks the requested output format before downstream use."
+}

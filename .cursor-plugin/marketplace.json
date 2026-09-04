@@ -1,0 +1,13 @@
+{
+  "name": "everyai-plugin",
+  "owner": {
+    "name": "EveryInfra"
+  },
+  "plugins": [
+    {
+      "name": "everyai",
+      "source": "./plugins/everyai",
+      "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks."
+    }
+  ]
+}

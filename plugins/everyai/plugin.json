@@ -1,0 +1,24 @@
+{
+  "name": "everyai",
+  "version": "0.1.0",
+  "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks.",
+  "author": {
+    "name": "EveryInfra",
+    "url": "https://everyinfra.com"
+  },
+  "homepage": "https://api.everyinfra.com/docs",
+  "repository": "https://github.com/everyinfra/everyai-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "everyinfra",
+    "agent-plugin",
+    "text-classification",
+    "text-extraction",
+    "llm",
+    "mcp",
+    "openai-compatible",
+    "codex",
+    "claude-code",
+    "agent-skills"
+  ]
+}
