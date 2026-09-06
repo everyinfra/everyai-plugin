@@ -5,13 +5,14 @@
   "plugin": "everyai",
   "skill": "everyai",
   "displayName": "EveryAI",
-  "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks.",
+  "description": "EveryAI skill for text transformation and source-bound EveryData cleanup with live tool discovery, task recovery and output checks.",
   "homepage": "https://everyinfra.com",
   "topics": [
     "everyinfra",
     "agent-plugin",
     "text-classification",
     "text-extraction",
+    "data-cleanup",
     "llm",
     "mcp",
     "openai-compatible",
@@ -19,16 +20,16 @@
     "claude-code",
     "agent-skills"
   ],
-  "searchIntent": "AI text classification and extraction with an agent skill",
+  "searchIntent": "AI text classification, extraction and source-bound EveryData cleanup with an agent skill",
   "readmeTitle": "EveryAI — Text classification, extraction and transformation with AI",
   "keywordResearch": "Qualitative intent mapping; no search volume, difficulty or ranking estimates.",
   "transport": "mcp",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "source": {
     "repository": "everyinfra/everyinfra-agent-plugins",
-    "commit": "78d3fd694244529e5062c51006fc10ef0de9dc87",
+    "commit": "3dca476c56cb47e97b0174faa3c512bca9b41dcf",
     "path": "plugins/everyinfra/skills/everyai/SKILL.md",
-    "sha256": "0090a27b75e51916a2b2528e8cffcc18730a700ac2b01438824e7e661d7e0b64"
+    "sha256": "1d46ec7cd36d8cf36c3824c0221d82a2076de88fc8f4955c4d018f0217c7ec5d"
   },
-  "definition": "EveryAI is a standalone EveryInfra agent skill for text classification, extraction, translation and summarization. It uses the available everyinfra_chat MCP models, minimizes the supplied input and checks the requested output format before downstream use."
+  "definition": "EveryAI routes ordinary text through the live compatibility tool and authorized EveryData results through source-bound cleanup with entitlement, field discovery and original-task recovery."
 }

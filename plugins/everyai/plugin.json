@@ -1,7 +1,7 @@
 {
   "name": "everyai",
-  "version": "0.1.0",
-  "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks.",
+  "version": "0.2.0",
+  "description": "EveryAI skill for text transformation and source-bound EveryData cleanup with live tool discovery, task recovery and output checks.",
   "author": {
     "name": "EveryInfra",
     "url": "https://everyinfra.com"
@@ -14,6 +14,7 @@
     "agent-plugin",
     "text-classification",
     "text-extraction",
+    "data-cleanup",
     "llm",
     "mcp",
     "openai-compatible",
