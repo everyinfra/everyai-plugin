@@ -5,14 +5,14 @@
   "plugin": "everyai",
   "skill": "everyai",
   "displayName": "EveryAI",
-  "description": "EveryAI skill for text transformation and source-bound EveryData cleanup with live tool discovery, task recovery and output checks.",
+  "description": "EveryAI skill for cleaning, classifying, extracting and summarizing text with EveryInfra's OpenAI-compatible AI API, free for accounts that have topped up, with output-format checks.",
   "homepage": "https://everyinfra.com",
   "topics": [
     "everyinfra",
     "agent-plugin",
     "text-classification",
     "text-extraction",
-    "data-cleanup",
+    "data-cleaning",
     "llm",
     "mcp",
     "openai-compatible",
@@ -20,16 +20,16 @@
     "claude-code",
     "agent-skills"
   ],
-  "searchIntent": "AI text classification, extraction and source-bound EveryData cleanup with an agent skill",
+  "searchIntent": "AI text cleaning, classification and extraction with an agent skill",
   "readmeTitle": "EveryAI — Text classification, extraction and transformation with AI",
   "keywordResearch": "Qualitative intent mapping; no search volume, difficulty or ranking estimates.",
   "transport": "mcp",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "source": {
     "repository": "everyinfra/everyinfra-agent-plugins",
-    "commit": "3dca476c56cb47e97b0174faa3c512bca9b41dcf",
+    "commit": "2f6383e4c4c97873d92c9233433d87072daa654f",
     "path": "plugins/everyinfra/skills/everyai/SKILL.md",
-    "sha256": "1d46ec7cd36d8cf36c3824c0221d82a2076de88fc8f4955c4d018f0217c7ec5d"
+    "sha256": "72762b6c15e409909a3daca54305934929af8959a6893d02a3c7b9db38a8869d"
   },
-  "definition": "EveryAI routes ordinary text through the live compatibility tool and authorized EveryData results through source-bound cleanup with entitlement, field discovery and original-task recovery."
+  "definition": "EveryAI sends text processing, including cleaning and labeling collected data, to EveryInfra's OpenAI-compatible AI API and checks the requested output format."
 }

@@ -1,7 +1,7 @@
 {
   "name": "everyai",
-  "version": "0.2.0",
-  "description": "EveryAI skill for text transformation and source-bound EveryData cleanup with live tool discovery, task recovery and output checks.",
+  "version": "0.3.0",
+  "description": "EveryAI skill for cleaning, classifying, extracting and summarizing text with EveryInfra's OpenAI-compatible AI API, free for accounts that have topped up, with output-format checks.",
   "author": {
     "name": "EveryInfra",
     "url": "https://everyinfra.com"
@@ -14,7 +14,7 @@
     "agent-plugin",
     "text-classification",
     "text-extraction",
-    "data-cleanup",
+    "data-cleaning",
     "llm",
     "mcp",
     "openai-compatible",

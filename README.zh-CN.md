@@ -1,9 +1,8 @@
 # EveryAI：AI 文本处理
 
-[English](README.md) · [安装配置](docs/setup.md) · [工作流程](docs/workflow.md) · [清洗转型](docs/migration.zh-CN.md) · [提示词示例](examples/prompts.md) · [能力与来源](docs/reference.md)
+[English](README.md) · [安装配置](docs/setup.md) · [工作流程](docs/workflow.md) · [提示词示例](examples/prompts.md) · [能力与来源](docs/reference.md)
 
-> **来源绑定清洗已上线：**生产已发现2个清洗工具、共15个操作，既有`everyinfra_chat`继续兼容。
-> 清洗是符合条件EveryData账户的有界权益；实际资格、激活与剩余额度以实时权益响应为准。
+> **更新（2026-10-09）：**数据清洗工具已下线。要清洗、分类、抽取或总结采集到的数据，请用 [AI 接口](https://everyinfra.com/products/ai)：兼容 OpenAI 的 `POST /api/v1/chat/completions`，MCP 里是 `everyinfra_chat`，充值过的账户免费调用，按累计充值分档限速。
 
 EveryAI 用于已经拿到文本之后的分类、抽取、翻译和摘要。先限定输入与输出格式，再调用当前可用模型，最后验证结果能否用于后续自动化。
 
@@ -47,9 +46,4 @@ python3 scripts/validate.py
 
 GitHub 源码公开不等于已在官方插件市场上架，也不代表 API 端到端测试已通过。维护者为 [EveryInfra](https://everyinfra.com)，许可证为 [Apache-2.0](LICENSE)。
 
-清洗迁移的资格、限制和停手条件见[清洗转型说明](docs/migration.zh-CN.md)。执行仍先读实时MCP
-`tools/list`与schema；不得把EveryData结果改送通用聊天来模拟清洗权益。
-
-符合条件的直客账户可显式领取有界的站内EveryData结果清洗权益；它不是无限免费Gemini，也不是
-通用聊天余额。当前共15个操作，包含字段发现与原任务找回，但执行仍必须先读
-生产`tools/list`和实时schema。
+**免费吗？** 充值过的账户免费调用 AI 接口，不扣余额；按累计充值分档限速（不满 $100 每分钟 50 次，满 $100 每分钟 500 次，满 $500 每分钟 5,000 次，账户内所有 Key 合计）。这个接口用来整理你在 EveryInfra 采集的数据。

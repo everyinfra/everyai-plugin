@@ -2,12 +2,13 @@
 
 ![EveryInfra H2 shared-base mark](plugins/everyai/assets/logo.svg)
 
-[简体中文](README.zh-CN.md) · [Setup](docs/setup.md) · [Workflow](docs/workflow.md) · [Cleanup transition](docs/migration.md) · [Prompts](examples/prompts.md) · [Capability reference](docs/reference.md) · [API documentation](https://api.everyinfra.com/docs)
+[简体中文](README.zh-CN.md) · [Setup](docs/setup.md) · [Workflow](docs/workflow.md) · [Prompts](examples/prompts.md) · [Capability reference](docs/reference.md) · [API documentation](https://api.everyinfra.com/docs)
 
-> **Source-bound cleanup is live:** Production advertises two cleanup tools with 15 operations while
-> the existing `everyinfra_chat` compatibility path remains active. Cleanup is a bounded benefit for
-> qualifying EveryData accounts; the live entitlement response decides each account's eligibility,
-> activation and remaining quota.
+> **Update (2026-10-09):** the two data cleanup tools have been retired. To clean, classify,
+> extract or summarize the data you collect, use the [AI API](https://everyinfra.com/en/products/ai):
+> OpenAI-compatible `POST /api/v1/chat/completions`, also available as the MCP tool
+> `everyinfra_chat`. It is free for accounts that have topped up, with per-minute limits that follow
+> cumulative top-ups.
 
 EveryAI is a standalone EveryInfra agent skill for text classification, extraction, translation and summarization. It uses the available everyinfra_chat MCP models, minimizes the supplied input and checks the requested output format before downstream use.
 
@@ -78,17 +79,11 @@ No model response should be trusted solely because JSON was requested. Parse the
 
 Not by itself. Generation is not retrieval. For current claims, obtain and inspect sources instead of treating fluent output as evidence.
 
-### Is EveryData cleanup available through this skill?
+### Is it free?
 
-Yes, when the live MCP discovery returns the two source-bound cleanup tools and the account's
-entitlement allows it. See the [migration guide](docs/migration.md); do not send an EveryData result
-through general chat to simulate cleanup access.
-
-Qualifying direct accounts may explicitly activate a bounded included-cleanup
-period for authorized EveryData results. It is not unlimited free Gemini or a general chat credit.
-The live entitlement response supplies current eligibility and remaining quota. The MCP surface has
-15 operations, including field discovery and original-task recovery; callers still
-must start with `tools/list` and use the returned schemas.
+Yes for accounts that have topped up: AI API calls do not use the balance. Per-minute limits follow
+cumulative top-ups (50 under $100, 500 from $100, 5,000 from $500, all keys on the account
+combined). The API is meant for organizing data collected with EveryInfra.
 
 ## Validate and contribute
 

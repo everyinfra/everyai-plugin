@@ -4,14 +4,11 @@
 
 A text transformation that matches the requested format, with absent information and uncertainty kept visible. JSON-shaped text must still be parsed and checked before downstream automation uses it.
 
-## Cleanup transition decision
+## Cleaning collected data
 
-If the input is an EveryData result, do not route it through general chat merely to obtain the
-planned cleanup benefit. Call MCP `tools/list` and inspect the returned `inputSchema`; the public
-OpenAPI document is a secondary integration reference. When discovery does not return cleanup,
-stop with a clear unavailable result. When it does, inspect entitlement, source/version, inferred
-fields and recipes before previewing. The complete current and post-launch decision table is in the
-[migration guide](migration.md).
+The former data cleanup tools were retired on 2026-10-09. Records collected with EveryData are
+cleaned, labeled or summarized with the same `everyinfra_chat` sequence below. The AI API is free
+for accounts that have topped up; per-minute limits follow cumulative top-ups.
 
 ## Execution contract
 
@@ -20,12 +17,6 @@ fields and recipes before previewing. The complete current and post-launch decis
 3. Choose the smallest relevant input and describe the required output format explicitly.
 4. Call the authorized model operation with OpenAI-style messages.
 5. Check format, required fields and missing values; report uncertainty rather than inventing absent facts.
-
-For discovered source-bound cleanup, do not reuse this chat sequence. Follow the separate flow:
-`get_entitlement` → `get_source` / `get_source_fields` / `list_recipes` → `preview` → explicit
-`activate` when needed → explicit `submit`. After interruption or refresh, use `list_jobs` or
-`find_job` with the original idempotency key, then inspect `get_job` / `list_units` / `get_result`.
-Export, partial export, cancel and result deletion remain separate user choices.
 
 ## Failure handling
 
