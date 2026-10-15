@@ -9,7 +9,7 @@
       "name": "everyai",
       "source": "./plugins/everyai",
       "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks.",
-      "version": "0.1.0"
+      "version": "0.3.0"
     }
   ],
   "description": "EveryAI text-processing skill for Codex and Claude Code: classification, JSON extraction, translation and summarization with live model discovery and output checks."
