@@ -1,5 +1,8 @@
 # EveryAI — Text classification, extraction and transformation with AI
 
+<!-- rq223-banner -->
+<p align="center"><img alt="EveryAI — Text classification, extraction and transformation with AI" src="assets/banner-en.jpg" width="100%"></p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">

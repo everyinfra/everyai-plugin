@@ -1,5 +1,8 @@
 # EveryAI：AI 文本处理
 
+<!-- rq223-banner -->
+<p align="center"><img alt="EveryAI：用 AI 做文本分类、抽取和改写" src="assets/banner-zh.jpg" width="100%"></p>
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
